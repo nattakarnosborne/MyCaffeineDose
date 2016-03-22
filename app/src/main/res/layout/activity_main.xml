@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:weightSum="1">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="How much Caffeine?" />
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="568dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/coffee"
+        android:layout_weight="0.69" />
+
+
+    <!--coffee quantity section -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="Coffee"
+                android:text="coffee" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addCoffee"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="addCoffee"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/coffeeQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/subCoffee"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:onClick="subCoffee"
+                    android:padding="4dp"
+                    android:text="-" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/decaffeinated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="decaffeinated"
+                android:text="decaff" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/adddecaffeinated"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="adddecaffeinated"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/DecaffeinatedQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/subDecaffeinated"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:onClick="subdecaffeinated"
+                    android:padding="4dp"
+                    android:text="-" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/espresso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="espresso"
+                android:text="espresso" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/adddEspresso"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:onClick="addEspresso"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/espressoQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/subdecaffeinated"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:onClick="subEspresso"
+                    android:padding="4dp"
+                    android:text="-" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Instant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="instant"
+                android:text="instant" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/adddInstant"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:onClick="addInstant"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/instantQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/subInstant"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:onClick="subInstant"
+                    android:padding="4dp"
+                    android:text="-" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--your daily dose section-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="Your today dose:" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="0" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="mg" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
