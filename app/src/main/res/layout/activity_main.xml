@@ -17,15 +17,15 @@
 
     <ImageView
         android:id="@+id/photo_image_view"
-        android:layout_width="568dp"
-        android:layout_height="300dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginBottom="16dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:background="@drawable/coffee"
-        android:layout_weight="0.69" />
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/lovecofee"
+        android:layout_weight="0.7" />
 
 
     <!--coffee quantity section -->
@@ -55,12 +55,13 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/addCoffee"
+                    android:id="@+id/subCoffee"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:gravity="center_horizontal"
-                    android:onClick="addCoffee"
-                    android:text="+" />
+                    android:gravity="center"
+                    android:onClick="subCoffee"
+                    android:padding="4dp"
+                    android:text="-" />
 
                 <TextView
                     android:id="@+id/coffeeQuantity"
@@ -70,16 +71,30 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     android:text="0" />
-
                 <Button
-                    android:id="@+id/subCoffee"
+                    android:id="@+id/addCoffee"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:gravity="center"
-                    android:onClick="subCoffee"
-                    android:padding="4dp"
-                    android:text="-" />
+                    android:gravity="center_horizontal"
+                    android:onClick="addCoffee"
+                    android:text="+" />
+
             </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity= "center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="cup" />
+
+            <Button
+                android:id="@+id/totalCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="totalCoffee"
+                android:text="0" />
 
         </LinearLayout>
 
@@ -103,12 +118,13 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/adddecaffeinated"
+                    android:id="@+id/subDecaffeinated"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:gravity="center_horizontal"
-                    android:onClick="adddecaffeinated"
-                    android:text="+" />
+                    android:gravity="center"
+                    android:onClick="subDecaffeinated"
+                    android:padding="4dp"
+                    android:text="-" />
 
                 <TextView
                     android:id="@+id/DecaffeinatedQuantity"
@@ -120,14 +136,22 @@
                     android:text="0" />
 
                 <Button
-                    android:id="@+id/subDecaffeinated"
+                    android:id="@+id/addDecaffeinated"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:gravity="center"
-                    android:onClick="subdecaffeinated"
-                    android:padding="4dp"
-                    android:text="-" />
+                    android:gravity="center_horizontal"
+                    android:onClick="addDecaffeinated"
+                    android:text="+" />
+
+
             </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity= "center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="cup" />
 
         </LinearLayout>
 
@@ -150,12 +174,13 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/adddEspresso"
+                    android:id="@+id/subEspresso"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:gravity="center"
-                    android:onClick="addEspresso"
-                    android:text="+" />
+                    android:onClick="subEspresso"
+                    android:padding="4dp"
+                    android:text="-" />
 
                 <TextView
                     android:id="@+id/espressoQuantity"
@@ -167,15 +192,22 @@
                     android:text="0" />
 
                 <Button
-                    android:id="@+id/subdecaffeinated"
+                    android:id="@+id/addEspresso"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:gravity="center"
-                    android:onClick="subEspresso"
-                    android:padding="4dp"
-                    android:text="-" />
-            </LinearLayout>
+                    android:onClick="addEspresso"
+                    android:text="+" />
 
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity= "center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="oz" />
         </LinearLayout>
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -184,11 +216,11 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/Instant"
+                android:id="@+id/InstantCoffee"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:onClick="instant"
+                android:onClick="instantCoffee"
                 android:text="instant" />
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -197,12 +229,13 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/adddInstant"
+                    android:id="@+id/subInstantCoffee"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:gravity="center"
-                    android:onClick="addInstant"
-                    android:text="+" />
+                    android:onClick="subInstantCoffee"
+                    android:padding="4dp"
+                    android:text="-" />
 
                 <TextView
                     android:id="@+id/instantQuantity"
@@ -214,14 +247,23 @@
                     android:text="0" />
 
                 <Button
-                    android:id="@+id/subInstant"
+                    android:id="@+id/adddInstantCoffee"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:gravity="center"
-                    android:onClick="subInstant"
-                    android:padding="4dp"
-                    android:text="-" />
+                    android:onClick="addInstantCoffee"
+                    android:text="+" />
+
+
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity= "center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="1 package" />
 
         </LinearLayout>
 
@@ -236,16 +278,17 @@
         android:layout_gravity="center_horizontal"
         android:padding="20dp">
 
-        <TextView
+        <Button
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:gravity="center_horizontal"
-            android:text="Your today dose:" />
+            android:layout_gravity="center_horizontal"
+            android:text="Your today dose"
+            android:onClick="todayDose"/>
 
         <TextView
-
+            android:id="@+id/myTotalDose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
