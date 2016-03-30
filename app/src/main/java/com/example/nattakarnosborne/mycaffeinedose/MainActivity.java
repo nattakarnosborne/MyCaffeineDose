@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         displayForCoffeeQuantity(coffeeQuantity);
 
 
+
+
     }
 
     /**
@@ -178,6 +180,10 @@ public class MainActivity extends AppCompatActivity {
      * This method is a total of caffeine.
      */
     public void todayDoes(View view) {
+
+        int totalDose = coffeeQuantity*95;
+        String dose = totalDose;
+        displayMyTotalDoes(dose);
 
 
     }
